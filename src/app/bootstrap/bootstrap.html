@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h3>Welcome to the Flower Garden</h3>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">Explore the Beauty of Nature</h5>
+      <p class="card-text">
+        Discover the vibrant colors and delicate petals of various flowers. Use the button below to see the magic bloom right before your eyes.
+      </p>
+
+      <button class="btn btn-primary" (click)="toggleText()">
+        See the Flowers Bloom
+      </button>
+
+      <div *ngIf="isTextVisible" class="mt-3">
+        <p class="text-success">
+           "Flowers are the music of the ground. From Earth's lips, they speak." 🌸
+        </p>
+        <p>
+          Immerse yourself in the vibrant world of flowers, from the calm lavender to the energetic sunflowers.
+        </p>
+
+        <div class="flower-gallery">
+          <img src="https://via.placeholder.com/300/FF6347/FFFFFF?text=Rose" alt="Rose" class="flower-img">
+          <img src="https://via.placeholder.com/300/FFD700/FFFFFF?text=Sunflower" alt="Sunflower" class="flower-img">
+          <img src="https://via.placeholder.com/300/9932CC/FFFFFF?text=Lilies" alt="Lilies" class="flower-img">
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h4 class="text-primary">Types of Flowers</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Roses: Symbol of Love</li>
+          <li class="list-group-item">Tulips: A Touch of Spring</li>
+          <li class="list-group-item">Sunflowers: Bright and Bold</li>
+          <li class="list-group-item">Lilies: Elegant and Graceful</li>
+        </ul>
+      </div>
+
+      <div class="mt-4">
+        <h4 class="text-primary">Want to Grow Your Own Flowers?</h4>
+        <p>
+          Find out how you can plant and take care of your own garden. It's easier than you think!
+        </p>
+        <a href="https://www.gardeningknowhow.com" target="_blank" class="btn btn-info">Learn More About Gardening</a>
+      </div>
+    </div>
+
+    <div class="card-footer text-muted">
+      Last updated 3 minutes ago
+    </div>
+  </div>
+</div>
